@@ -5,6 +5,7 @@ import { getQuoteSelector, getQuoteLoading } from '../selectors/quoteSelector';
 import { getQuotePromise } from '../actions/quoteActions';
 import Quote from '../components/quote/Quote';
 import Load from '../components/quote/Load';
+import styles from './SimpsonQuote.css';
 
 function SimpsonQuote({ quote, loading, getQuote }) {
 
@@ -15,10 +16,12 @@ function SimpsonQuote({ quote, loading, getQuote }) {
   if(loading) return <h1>Loading Simpsons quote...</h1>;
 
   return (
-    <>
-      <Quote quote={quote.quote} characterName={quote.characterName} characterImage={quote.characterImage} />
+    <section className={styles.SimpsonQuote}>
+      <div>
+        <Quote quote={quote.quote} characterName={quote.characterName} characterImage={quote.characterImage} />
+      </div>
       <Load newQuote={getQuote} />
-    </>
+    </section>
   );
 
 }

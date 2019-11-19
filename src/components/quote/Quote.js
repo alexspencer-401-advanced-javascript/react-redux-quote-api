@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Quote.css';
 
 const Quote = ({ quote, characterName, characterImage }) => {
   return (
-    <figure>
+    <figure className={styles.Quote}>
       <img src={characterImage} />
       <figcaption>{characterName}</figcaption>
       <p>{quote}</p>
