@@ -1,0 +1,22 @@
+.Quote {
+
+  img {
+    height: 400px;
+  }
+
+  figcaption {
+    margin-top: 35px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: rgb(0, 140, 255);
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+  }
+}

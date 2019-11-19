@@ -1,0 +1,16 @@
+.Load {
+
+  button {
+    background-color: rgb(0, 225, 255);
+    border-radius: 5px;
+    color: white;
+    border: 0px solid black;
+    padding: 10px 10px;
+    font-size: 1.2em;
+  }
+
+  button:hover {
+    background-color: slategrey;
+    cursor: pointer;
+  }
+}
