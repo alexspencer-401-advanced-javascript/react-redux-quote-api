@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { getQuoteSelector, getQuoteLoading } from '../selectors/quoteSelector';
 import { getQuotePromise } from '../actions/quoteActions';
 import Quote from '../components/quote/Quote';
+import Load from '../components/quote/Load';
 
 function SimpsonQuote({ quote, loading, getQuote }) {
 
@@ -14,7 +15,10 @@ function SimpsonQuote({ quote, loading, getQuote }) {
   if(loading) return <h1>Loading Simpsons quote...</h1>;
 
   return (
-    <Quote quote={quote.quote} characterName={quote.characterName} characterImage={quote.characterImage} />
+    <>
+      <Quote quote={quote.quote} characterName={quote.characterName} characterImage={quote.characterImage} />
+      <Load newQuote={getQuote} />
+    </>
   );
 
 }
